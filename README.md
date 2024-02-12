@@ -9,7 +9,7 @@
   <a href="#-license">📝 License</a>
 </p>
 
-![Preview](./assets/img/Preview.png)
+![Preview](/Assets/Preview.png)
 
 ## 💻 Projeto
 
