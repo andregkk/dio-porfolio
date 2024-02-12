@@ -1,0 +1,92 @@
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Header .photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.Header .title {
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+}
+
+.information p::before{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.information .social::before {
+    color: #fff;
+    text-decoration: none;
+}
+
+.information .job::before {
+    background-image: url('/Assets/icons/Profissão.svg');
+}
+
+.information .local::before {
+    background-image: url('/Assets/icons/Local.svg');
+}
+
+.information .social::before {
+    background-image: url(/Assets/icons/linkedin.svg);
+}
+
+.information .email::before {
+    background-image: url('/Assets/icons/E-mail.svg');
+}
+
+@media only screen and (min-width: 768px) {
+    .Header {
+        display: grid;
+        grid-template-areas: 
+            "photo title"
+            "photo information"
+        ;
+    }
+    
+    .Header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    
+    .Header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 210px;
+    }
+    
+    .Header .information {
+        grid-area: information;
+    }  
+}
