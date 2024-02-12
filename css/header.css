@@ -51,19 +51,19 @@
 }
 
 .information .job::before {
-    background-image: url('/Assets/icons/Profissão.svg');
+    background-image: url(Assets/icons/Profissão.svg);
 }
 
 .information .local::before {
-    background-image: url('/Assets/icons/Local.svg');
+    background-image: url(Assets/icons/Local.svg);
 }
 
 .information .social::before {
-    background-image: url(/Assets/icons/linkedin.svg);
+    background-image: url(Assets/icons/linkedin.svg);
 }
 
 .information .email::before {
-    background-image: url('/Assets/icons/E-mail.svg');
+    background-image: url(Assets/icons/E-mail.svg);
 }
 
 @media only screen and (min-width: 768px) {
